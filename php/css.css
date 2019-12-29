@@ -1,0 +1,52 @@
+body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+input {width: 90px;}
+/* Copied from html body */
+
+.container {
+	display: table;
+	background-color: #000;
+	border-spacing: 1px;
+	border:9px solid #000;
+}
+.row {display: table-row;}
+.cell {
+	display: table-cell;
+	background-color: white;
+	height: 30px;
+	width: 30px;   
+}
+footer div {
+	background-color: #229;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+footer a {
+	text-decoration: none;
+	color: #ccc;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
+}
+footer a:hover {
+	color: #fff;
+}
+header div {
+	background-color: #229;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+header a {
+	text-decoration: none;
+	color: #ccc;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
+}
+header a:hover {
+	color: #fff;
+}
+
