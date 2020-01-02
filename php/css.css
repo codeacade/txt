@@ -50,3 +50,10 @@ header a:hover {
 	color: #fff;
 }
 
+/*  form styles  */
+form {margin: 15px;}
+
+label {
+	width: 80px;
+	display: inline-block;
+}
