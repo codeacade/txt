@@ -1,8 +1,8 @@
 <footer>
   <div>
-  <a href="#" title="random1">Random 1</a>
+  <a href="include.php" title="Home">Home</a>
   <a href="#" title="random2">Random 2</a>
-  <a href="#" title="random3">Random 3</a>
+  <a href="contact.php" title="contact">Contact us</a>
   </div>
 </footer>
 </body>
