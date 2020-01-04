@@ -35,12 +35,12 @@
   <?php
 
     while($record = mysql_fetch_array($answer)) {	  
-	  $i = 1;
-      while($i < sizeof($record)) {
-	    echo "<br />".(($i-1)/2).". ";
-	    print_r(array_keys($record)[$i]); //array of values and keys
-	    echo " = ".$record[($i-1)/2]; //array of values (half of above)
-	    $i+=2;
+	  $i = 0;
+      while($i*2 < sizeof($record)) {
+	    echo "<br />".($i+1).". ";
+	    print_r(array_keys($record)[$i*2+1]); //array of values and keys
+	    echo " = ".$record[$i]; //array of values (half of above)
+	    $i++;
 	  }
 	  br();
 	}
