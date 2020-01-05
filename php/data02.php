@@ -21,6 +21,7 @@
 	  echo "<h3>Content of mysql_select_db</h3>";
 	  var_dump($dbase);
 	  //mysql_close(); //this is closing all open databases
+	    
     }
   ?>
 </body>
