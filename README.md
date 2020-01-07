@@ -22,3 +22,16 @@ How can I add php/sql to my Mint server?
 14. Open in browser (default username: phpmyadmin): http://localhost/phpmyadmin/
 
 link: https://connectwww.com/how-to-install-and-configure-apachephpmysql-and-phpmyadmin-on-ubuntu/727/
+
+If there is no prvelage to create new database use the system maintenance user and password created when you installed phpMyAdmin.
+It can be found in the debian.cnf file at /ect/mysql then you will have total access:
+
+    cd /etc/mysql
+    sudo nano debian.cnf
+    Just look - don't change anything!
+    [mysql_upgrade]
+    host     = localhost
+    user     = debian-sys-maint       <----use this user
+    password = s0meRaND0mChar$s       <----use this password
+    socket   = /var/run/mysqld/mysqld.sock
+
