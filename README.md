@@ -43,5 +43,8 @@ It can be found in the debian.cnf file at /ect/mysql then you will have total ac
 16. If there is no connection (no external access) 
 
     sudo ufw allow 80/tcp
+    
     sudo ufw allow 443/tcp
+    
     sudo ufw reload
+    
