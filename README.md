@@ -16,8 +16,8 @@ How can I add php/sql to my Mint server?
 11. Restart apache: sudo systemctl restart apache2
 12. Open in browser (default username: phpmyadmin): http://localhost/phpmyadmin/
 13. IF NO PHPMYADMIN STARTS - go to:/etc/apache2/apache2.conf
-13a. Add at the very back of apache2.conf: Include /etc/phpmyadmin/apache.conf
-13b. Restart apache: sudo systemctl restart apache2
+ 13a. Add at the very back of apache2.conf: Include /etc/phpmyadmin/apache.conf
+ 13b. Restart apache: sudo systemctl restart apache2
 
 14. Open in browser (default username: phpmyadmin): http://localhost/phpmyadmin/
 
