@@ -32,9 +32,11 @@ It can be found in the debian.cnf file at /ect/mysql then you will have total ac
     [mysql_upgrade]
     host     = localhost
     user     = debian-sys-maint       <----use this user
-    password = s0meRaND0mChar$s       <----use this password
+    password = s0meRaND0mChar$s       <----use this password !!NEVER CHANGE IT!! 
     socket   = /var/run/mysqld/mysqld.sock
 -------------------------------------------------------------
+<br />14a. If root password is not set go and set it with [Password Hashing] = "Native MySQL"
+
 15. To access webserver on network check firewall status:
 
     sudo ufw app list
