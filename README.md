@@ -1,24 +1,23 @@
 How can I add php/sql to my Mint server?
 
-1. Type: <i>sudo apt-get install apache2</i>
+1. Type: <i>sudo apt install apache2</i>
 2. Test if it is working: http://localhost/
 
-3. Type: <i>sudo apt-get install libapache2-mod-php</i>
-4. Restart apache: <i>sudo systemctl restart apache2</i>
+3. Type: <i>sudo apt install libapache2-mod-php</i>
+4. Restart apache: <i>sudo systemctl restart apache2</i> (-or-) <i> sudo service apache2 restart</i>
 5. WWW root: /var/www/html/
 6. Create <?php phpinfo() ?> and run to check if working.
 
-7. Type: <i>sudo apt-get install mysql-server</i>
-8. Type: <i>sudo apt-get install mysql-client</i>
-9. Test if it is working: sudo systemctl status mysql
+7. Type: <i>sudo apt install mysql-server</i>
+8. Type: <i>sudo apt install mysql-client</i> (can be added later)
+9. Test if it is working: <i>sudo systemctl status mysql</i>  (-or-) <i> sudo service mysql status</i>
 
-10. Type: <i>sudo apt-get install phpmyadmin</i>
-11. Restart apache: <i>sudo systemctl restart apache2</i>
+10. Type: <i>sudo apt install phpmyadmin</i>
+11. Restart apache: <i>sudo systemctl restart apache2</i> (-or-) <i> sudo service apache2 restart</i>
 12. Open in browser (default username: phpmyadmin): http://localhost/phpmyadmin/
 13. IF NO PHPMYADMIN STARTS - go to:/etc/apache2/apache2.conf
 <br />13a. Add at the very back of apache2.conf: Include /etc/phpmyadmin/apache.conf
-<br />13b. Restart apache: <i>sudo systemctl restart apache2</i>
-<br />13.bb. Optional apache restart: <i>sudo service apache2 restart</i>
+<br />13b. Restart apache: <i>sudo systemctl restart apache2</i> (-or-) <i> sudo service apache2 restart</i>
 
 14. Open in browser (default username: phpmyadmin): http://localhost/phpmyadmin/
 
