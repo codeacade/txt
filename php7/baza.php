@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- New files with new Mysql approach from PHP7 -->
+<!-- see: https://www.php.net/manual/en/mysqli.construct.php -->
 <html>
 <head>
   <meta charser="utf-8" />
