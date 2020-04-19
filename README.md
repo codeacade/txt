@@ -50,3 +50,9 @@ It can be found in the debian.cnf file at /ect/mysql then you will have total ac
     
     sudo ufw reload
     
+17. If there is error on database acces in phpMyAdmin - check version - phpMyAdmin v.4.6 not-compatyble with PHP 7. Download and manually install phpMyAdmin 4.9 (https://devanswers.co/manually-upgrade-phpmyadmin/)
+<br />17a. Rename <i>/usr/share/phpmyadmin</i> into <i>/usr/share/phpmyadmin_OLD</i>
+<br />17b. Download phpMyAdmin-4.9.5-english.tar.gz from https://www.phpmyadmin.net/downloads/
+<br />17c. Create new <i>/usr/share/phpmyadmin</i> and unpack downloaded conthent there
+<br />BEWARE!! Latest phpMyAdmin v.5 isnot compatybile with old PHP 5!!
+    
