@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- New files with new Mysql approach from PHP7 -->
 <html>
 <head>
   <meta charser="utf-8" />
@@ -11,7 +12,9 @@
 </head>
 <body>
   <h2>HEADER</h2>
-  <?php 
+  <?php
+  /* ****In PHP7 no longer "mysql_connect" - replaced with "mysql>i<_connect"
+  ****** Also new object-orientated approach is used like "new mysqli" ***** */
   //$baza = mysqli_connect('localhost','buser01','M)M01');
   $baza = new mysqli('localhost','abuser01','M)M01');
   //if ($baza === false) die("Dbase connection error: ".$baza->error)
