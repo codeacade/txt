@@ -2,9 +2,14 @@
 # https://blog.mrverrall.co.uk/2015/10/moodle-on-centos-and-red-hat-7.html
 #######################################################################
 ##  READ THIS FIRST !!! - TWO LINES BELOW MADE A TRICK (SELINUX ISSUE)
-#######################################################################
+-------------------------------------------------------------------------
 ## semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/moodledata(/.*)?"
 ## restorecon -R /var/www/moodledata
+#######################################################################
+############### GOOD TO D OTHE SAME FOR ALL HTML ######################
+------------------------------------------------------------------------
+## semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html(/.*)?"
+## restorecon -R /var/www/html
 #######################################################################
 #
 # This Bash script installs Moodle (http://moodle.org) and all it's
