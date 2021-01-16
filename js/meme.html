@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>images challenge</title>
+    <style>
+        * {font-family:Ubuntu Condensed;}
+        div {
+            position: relative;
+        }
+        p {
+            position: absolute;
+            bottom: -15px;
+            left: 10px;
+            font-size: 2rem;
+            color: #fff;
+            width: 280px;
+            text-shadow: 2px 2px 5px #000;
+        }
+    </style>
+</head>
+    User text: <input type="text" id="inp1"><br><br>
+    <div>
+        <img src="bmw01.jpeg">
+        <p>Condensed</p>
+    </div>
+    <script>
+        /*  JS Functions  */
+        newText = () => js_p.innerHTML = js_inp1.value
+
+        /* JS Objects  */
+        js_inp1 = document.querySelector("#inp1")
+        js_p = document.querySelector("p")
+
+        /* JS Events  */
+        js_inp1.addEventListener("input", () => newText(js_inp1))
+        
+    </script>
+</html>
