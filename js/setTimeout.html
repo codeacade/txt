@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>setTimeout</title>
+    <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+    <input id="in1"><input id="in2">
+    <button onclick="inCalc()" id="b2">calculate</button>
+
+    <script>
+        inps = document.querySelectorAll('input');
+        but2 = document.querySelector('#b2');
+        inCalc = () => {                                             // main function(){...}
+            setTimeout(() => {                                       // setTimeout(function(){...}, time)
+                but2.innerHTML = parseInt(inps[0].value) + parseInt(inps[1].value);
+            },500);
+        }
+    </script>
+</body>
+
