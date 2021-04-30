@@ -1,5 +1,10 @@
 Usefull links (markdown):
 
+Fetch:
+```
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+```
+
 Learn how to create a responsive slideshow with CSS and JavaScript
 https://www.w3schools.com/howto/howto_js_slideshow.asp
 
